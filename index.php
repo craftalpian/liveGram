@@ -1,1 +1,191 @@
-<?php date_default_timezone_set(base64_decode('QXNpYS9KYWthcnRh'));error_reporting(0);$d0=date(base64_decode('ZC1tLVkgaDppOnM='));function getCSRF(){$t1=file_get_contents(base64_decode('aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbQ=='));$m2=explode(base64_decode('ImNzcmZfdG9rZW4iOiI='),$t1);$m2=explode(base64_decode('Ig=='),$m2[1]);return $m2[0];}function generateUUID($z3=true){$v4=sprintf(base64_decode('JTA0eCUwNHgtJTA0eC0lMDR4LSUwNHgtJTA0eCUwNHglMDR4'),mt_rand(0,0xffff),mt_rand(0,0xffff),mt_rand(0,0xffff),mt_rand(0,0x0fff)|0x4000,mt_rand(0,0x3fff)|0x8000,mt_rand(0,0xffff),mt_rand(0,0xffff),mt_rand(0,0xffff));return $z3?$v4:str_replace(base64_decode('LQ=='),'',$v4);}function hookGenerate($c5){return base64_decode('aWdfc2lnX2tleV92ZXJzaW9uPTQmc2lnbmVkX2JvZHk9').hash_hmac(base64_decode('c2hhMjU2'),$c5,base64_decode('NWJkODZkZjMxZGM0OTZhM2E5ZmRkYjc1MTUxNWNjNzYwMmJkYWQzNTdkMDg1YWMzYzU1MzFlMTgzODQwNjhiNA==')).base64_decode('Lg==').urlencode($c5);}function request($b6,$t7,$k8,$x9=base64_decode('R0VU')){$na=curl_init();curl_setopt($na,CURLOPT_URL,base64_decode('aHR0cHM6Ly9pLmluc3RhZ3JhbS5jb20vYXBp').$b6);curl_setopt($na,CURLOPT_RETURNTRANSFER,1);curl_setopt($na,CURLOPT_HEADER,1);if($x9==base64_decode('UE9TVA==')){curl_setopt($na,CURLOPT_POSTFIELDS,$t7);curl_setopt($na,CURLOPT_POST,1);}else{curl_setopt($na,CURLOPT_CUSTOMREQUEST,base64_decode('R0VU'));}$sb=array();$sb[]=base64_decode('QWNjZXB0OiAqLyo=');$sb[]=base64_decode('Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQ=');$sb[]=base64_decode('Q29va2llMjogX0VOVlsiVmVyc2lvbj0xIl0=');$sb[]=base64_decode('QWNjZXB0LUxhbmd1YWdlOiBlbi1VUw==');$sb[]=base64_decode('VXNlci1BZ2VudDogSW5zdGFncmFtIDI0LjAuMC4xMi4yMDEgQW5kcm9pZCAoMjgvOTsgMzIwZHBpOyA3MjB4MTI4MDsgc2Ftc3VuZzsgU00tSjUzMFk7IGo1eTE3bHRlZHg7IHNhbXN1bmdleHlub3M3ODcwOyBpbl9JRDsp');$sb[]=base64_decode('SG9zdDogaS5pbnN0YWdyYW0uY29t');if($k8!==base64_decode('MA==')){$sb[]=base64_decode('Q29va2llOiA=').$k8;}curl_setopt($na,CURLOPT_HTTPHEADER,$sb);$xc=curl_exec($na);$nd=curl_getinfo($na);$je=substr($xc,0,curl_getinfo($na,CURLINFO_HEADER_SIZE));$jf=substr($xc,curl_getinfo($na,CURLINFO_HEADER_SIZE));if(curl_errno($na)){echo base64_decode('RXJyb3I6').curl_error($na);}curl_close($na);returnarray($je,$jf,$nd,$xc,$b6,$t7);}echo base64_decode('U2VsYW1hdCBkYXRhbmcgZGkNCiBfICAgICBfX19fXyAgICAgX19fX19fXyBfX19fIF9fX18gICAgICBfICAgIF9fICBfXw0KfCB8ICAgfF8gXyAgICAvIC8gX19fXy8gX19ffCAgXyAgICAgLyAgIHwgIC8gIHwNCnwgfCAgICB8IHwgICAvIC98ICBffHwgfCAgX3wgfF8pIHwgIC8gXyAgfCB8L3wgfA0KfCB8X19fIHwgfCAgIFYgLyB8IHxfX3wgfF98IHwgIF8gPCAgLyBfX18gfCB8ICB8IHwNCnxfX19fX3xfX198ICBfLyAgfF9fX19fX19fX3xffCBfL18vICAgX198ICB8X3wNCg0KwqkgUGlhbmphbW1hbGFtIDIwMTkNCg0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KU2ViZWx1bSBtZWxhbmp1dGthbiwgZGVuZ2FuIGFuZGEgbWVuZ2d1bmFrYW4gYXBsaWthc2kgaW5pLCBiZXJhcnRpIGFuZGEgbWVuZXJpbWEgc2VnYWxhIGtvbnNla3VlbnNpIGRhbiBtZW5naWt1dGkgYXR1cmFuIHlhbmcgYmVybGFrdS4NCg0KVXNlcm5hbWUgOiBA');$i10=trim(fgets(STDIN));echo base64_decode('UGFzc3dvcmQgOiA=');$x11=trim(fgets(STDIN));$p12=generateDeviceId();$f13=request(base64_decode('L3YxL2FjY291bnRzL2xvZ2luLw=='),hookGenerate(base64_decode('eyJwaG9uZV9pZCI6Ig==').generateUUID().base64_decode('IiwiX2NzcmZ0b2tlbiI6Ig==').getCSRF().base64_decode('IiwidXNlcm5hbWUiOiI=').$i10.base64_decode('IiwiYWRpZCI6Ig==').generateUUID().base64_decode('IiwiZ3VpZCI6Ig==').generateUUID().base64_decode('IiwiZGV2aWNlX2lkIjoi').$p12.base64_decode('IiwicGFzc3dvcmQiOiI=').$x11.base64_decode('IiwibG9naW5fYXR0ZW1wdF9jb3VudCI6IjAifQ==')),0,base64_decode('UE9TVA=='));if(json_decode($f13[1],true)[base64_decode('bG9nZ2VkX2luX3VzZXI=')][base64_decode('dXNlcm5hbWU=')]==strtolower($i10)){if(strpos($f13[0],base64_decode('c2V0LWNvb2tpZQ=='))!==false){preg_match_all(base64_decode('JXNldC1jb29raWU6ICguKj8pOyU='),$f13[0],$a14);$k8='';for($o15=0;$o15<count($a14[0]);$o15++){$k8.=$a14[1][$o15].base64_decode('Ow==');}}else{preg_match_all(base64_decode('JVNldC1Db29raWU6ICguKj8pOyU='),$f13[0],$a14);$k8='';for($o15=0;$o15<count($a14[0]);$o15++){$k8.=$a14[1][$o15].base64_decode('Ow==');}}$k16=json_decode($f13[1],true)[base64_decode('bG9nZ2VkX2luX3VzZXI=')][base64_decode('cGs=')];$na=curl_init();curl_setopt($na,CURLOPT_URL,base64_decode('aHR0cHM6Ly9pLmluc3RhZ3JhbS5jb20vYXBpL3YxL2xpdmUvY3JlYXRlLw=='));curl_setopt($na,CURLOPT_RETURNTRANSFER,1);curl_setopt($na,CURLOPT_POSTFIELDS,base64_decode('X2NzcmZ0b2tlbj0=').getCSRF().base64_decode('JnByZXZpZXdfaGVpZ2h0PTE5MjAmX3V1aWQ9').generateUUID().base64_decode('JmJyb2FkY2FzdF90eXBlPVJUTVBfU1dBUF9FTkFCTEVEJnByZXZpZXdfd2lkdGg9MTA4MCZpbnRlcm5hbF9vbmx5PTA='));curl_setopt($na,CURLOPT_POST,1);curl_setopt($na,CURLOPT_ENCODING,base64_decode('Z3ppcCwgZGVmbGF0ZQ=='));$sb=array();$sb[]=base64_decode('WC1JZy1Db25uZWN0aW9uLVR5cGU6IFdJRkk=');$sb[]=base64_decode('VXNlci1BZ2VudDogSW5zdGFncmFtIDM1LjAuMC4yMC45NiBBbmRyb2lkICgyMS81LjA7IDQ4MGRwaTsgMTA4MHgxOTIwOyBhc3VzOyBBU1VTX1owMEFEOyBaMDBBXzE7IG1vZmRfdjE7IGluX0lEOyA5NTQxNDM0Nyk=');$sb[]=base64_decode('QWNjZXB0LUxhbmd1YWdlOiBpZC1JRCwgZW4tVVM=');$sb[]=base64_decode('Q29va2llOiA=').$k8;$sb[]=base64_decode('SG9zdDogaS5pbnN0YWdyYW0uY29t');$sb[]=base64_decode('WC1GYi1IdHRwLUVuZ2luZTogTGlnZXI=');$sb[]=base64_decode('Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQ=');curl_setopt($na,CURLOPT_HTTPHEADER,$sb);$s17=curl_exec($na);if(curl_errno($na)){echo base64_decode('RXJyb3I6').curl_error($na);}curl_close($na);echo base64_decode('U3RyZWFtIGlkIDog').json_decode($s17,true)[base64_decode('YnJvYWRjYXN0X2lk')].base64_decode('DQo=');echo base64_decode('TWFpbiB1cmwgOiBydG1wczovL2xpdmUtdXBsb2FkLmluc3RhZ3JhbS5jb206NDQzL3J0bXAvDQo=');echo base64_decode('TGFzdCB1cmwgOiA=').explode(base64_decode('L3J0bXAv'),json_decode($s17,true)[base64_decode('dXBsb2FkX3VybA==')])[1].base64_decode('DQo=');$na=curl_init();curl_setopt($na,CURLOPT_URL,base64_decode('aHR0cHM6Ly9pLmluc3RhZ3JhbS5jb20vYXBpL3YxL2xpdmUv').json_decode($s17,true)[base64_decode('YnJvYWRjYXN0X2lk')].base64_decode('L3N0YXJ0Lw=='));curl_setopt($na,CURLOPT_RETURNTRANSFER,1);curl_setopt($na,CURLOPT_POSTFIELDS,base64_decode('X2NzcmZ0b2tlbj0=').getCSRF().base64_decode('Jl91dWlkPQ==').generateUUID().'');curl_setopt($na,CURLOPT_POST,1);curl_setopt($na,CURLOPT_ENCODING,base64_decode('Z3ppcCwgZGVmbGF0ZQ=='));$sb=array();$sb[]=base64_decode('WC1JZy1Db25uZWN0aW9uLVR5cGU6IFdJRkk=');$sb[]=base64_decode('VXNlci1BZ2VudDogSW5zdGFncmFtIDM1LjAuMC4yMC45NiBBbmRyb2lkICgyMS81LjA7IDQ4MGRwaTsgMTA4MHgxOTIwOyBhc3VzOyBBU1VTX1owMEFEOyBaMDBBXzE7IG1vZmRfdjE7IGluX0lEOyA5NTQxNDM0Nyk=');$sb[]=base64_decode('QWNjZXB0LUxhbmd1YWdlOiBpZC1JRCwgZW4tVVM=');$sb[]=base64_decode('Q29va2llOiA=').$k8;$sb[]=base64_decode('WC1GYi1IdHRwLUVuZ2luZTogTGlnZXI=');$sb[]=base64_decode('Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQ=');curl_setopt($na,CURLOPT_HTTPHEADER,$sb);$xc=curl_exec($na);if(curl_errno($na)){echo base64_decode('RXJyb3I6').curl_error($na);}curl_close($na);echo base64_decode('SW5naW4gbWVuZ2FraGlyaSA/IChrZXRpayAxKQ==');$b18=trim(fgets(STDIN));if($b18==base64_decode('MQ==')){$na=curl_init();curl_setopt($na,CURLOPT_URL,base64_decode('aHR0cHM6Ly9pLmluc3RhZ3JhbS5jb20vYXBpL3YxL2xpdmUv').json_decode($s17,true)[base64_decode('YnJvYWRjYXN0X2lk')].base64_decode('L2VuZF9icm9hZGNhc3Qv'));curl_setopt($na,CURLOPT_RETURNTRANSFER,1);curl_setopt($na,CURLOPT_POSTFIELDS,hookGenerate(base64_decode('eyJfY3NyZnRva2VuIjoi').getCSRF().base64_decode('IiwiX3VpZCI6Ig==').$k16.base64_decode('IiwiX3V1aWQiOiI=').generateUUID().base64_decode('IiwiZW5kX2FmdGVyX2NvcHlyaWdodF93YXJuaW5nIjoiZmFsc2UifQ==')));curl_setopt($na,CURLOPT_POST,1);curl_setopt($na,CURLOPT_ENCODING,base64_decode('Z3ppcCwgZGVmbGF0ZQ=='));$sb=array();$sb[]=base64_decode('WC1JZy1Db25uZWN0aW9uLVR5cGU6IFdJRkk=');$sb[]=base64_decode('VXNlci1BZ2VudDogSW5zdGFncmFtIDM1LjAuMC4yMC45NiBBbmRyb2lkICgyMS81LjA7IDQ4MGRwaTsgMTA4MHgxOTIwOyBhc3VzOyBBU1VTX1owMEFEOyBaMDBBXzE7IG1vZmRfdjE7IGluX0lEOyA5NTQxNDM0Nyk=');$sb[]=base64_decode('QWNjZXB0LUxhbmd1YWdlOiBpZC1JRCwgZW4tVVM=');$sb[]=base64_decode('Q29va2llOiA=').$k8;$sb[]=base64_decode('WC1GYi1IdHRwLUVuZ2luZTogTGlnZXI=');$sb[]=base64_decode('Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQ=');curl_setopt($na,CURLOPT_HTTPHEADER,$sb);$q19=curl_exec($na);if(curl_errno($na)){echo base64_decode('RXJyb3I6').curl_error($na);}curl_close($na);echo json_decode($q19,true)[base64_decode('c3RhdHVz')];}}?>
+<?php
+// Mengatur lokasi sekarang
+date_default_timezone_set('Asia/Jakarta');
+error_reporting(0);
+$datetime = date("d-m-Y h:i:s");
+
+// Fungsi yang digunakan
+
+// Mengambil CSRF token langsung dari Instagram
+function getCSRF(){
+  $fgc    =   file_get_contents("https://www.instagram.com");
+  $explode    =   explode('"csrf_token":"',$fgc);
+  $explode    =   explode('"',$explode[1]);
+  return $explode[0];
+}
+
+// Membuat UUID
+function generateUUID($keepDashes = true){
+  $uuid = sprintf(
+    '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+    mt_rand(0, 0xffff),
+    mt_rand(0, 0xffff),
+    mt_rand(0, 0xffff),
+    mt_rand(0, 0x0fff) | 0x4000,
+    mt_rand(0, 0x3fff) | 0x8000,
+    mt_rand(0, 0xffff),
+    mt_rand(0, 0xffff),
+    mt_rand(0, 0xffff)
+  );
+  return $keepDashes ? $uuid : str_replace('-', '', $uuid);
+}
+
+// Membuat signed_body untuk UA : Instagram 24.0.0.12.201 Android
+function hookGenerate($hook){
+  return 'ig_sig_key_version=4&signed_body=' . hash_hmac('sha256', $hook, '5bd86df31dc496a3a9fddb751515cc7602bdad357d085ac3c5531e18384068b4') . '.' . urlencode($hook);
+}
+
+// Fungsi request untuk mengirim data
+function request($url,$hookdata,$cookie,$method='GET'){
+  $ch = curl_init();
+
+  curl_setopt($ch, CURLOPT_URL, "https://i.instagram.com/api".$url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_HEADER, 1);
+  if($method == 'POST'){
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $hookdata);
+    curl_setopt($ch, CURLOPT_POST, 1);
+  }else{
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+  }
+
+  $headers = array();
+  $headers[] = "Accept: */*";
+  $headers[] = "Content-Type: application/x-www-form-urlencoded";
+  $headers[] = 'Cookie2: _ENV["Version=1"]';
+  $headers[] = "Accept-Language: en-US";
+  $headers[] = "User-Agent: Instagram 24.0.0.12.201 Android (28/9; 320dpi; 720x1280; samsung; SM-J530Y; j5y17ltedx; samsungexynos7870; in_ID;)";
+  $headers[] = "Host: i.instagram.com";
+  if($cookie !== "0"){
+    $headers[] = "Cookie: ".$cookie;
+  }
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+  $result = curl_exec($ch);
+	$httpcode  = curl_getinfo($ch);
+	$header    = substr($result, 0, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
+	$body      = substr($result, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
+
+  if(curl_errno($ch)){
+    echo 'Error:' . curl_error($ch);
+  }
+  curl_close ($ch);
+  return array($header, $body, $httpcode,$result,$url,$hookdata); // body itu response body
+}
+
+echo "Selamat datang di
+ _     _____     _______ ____ ____      _    __  __
+| |   |_ _\ \   / / ____/ ___|  _ \    / \  |  \/  |
+| |    | | \ \ / /|  _|| |  _| |_) |  / _ \ | |\/| |
+| |___ | |  \ V / | |__| |_| |  _ <  / ___ \| |  | |
+|_____|___|  \_/  |_____\____|_| \_\/_/   \_\_|  |_|
+
+© Pianjammalam 2019
+
+-----------------------------------------------------------
+
+Sebelum melanjutkan, dengan anda menggunakan aplikasi ini, berarti anda menerima segala konsekuensi dan mengikuti aturan yang berlaku.
+
+Username : @";
+$username = trim(fgets(STDIN));
+echo "Password : ";
+$password = trim(fgets(STDIN));
+
+$genDevId = generateDeviceId();
+$tryLogin = request('/v1/accounts/login/',hookGenerate('{"phone_id":"'.generateUUID().'","_csrftoken":"'.getCSRF().'","username":"'.$username.'","adid":"'.generateUUID().'","guid":"'.generateUUID().'","device_id":"'.$genDevId.'","password":"'.$password.'","login_attempt_count":"0"}'),0,"POST");
+
+if(json_decode($tryLogin[1],true)['logged_in_user']['username'] == strtolower($username)){
+  if (strpos($tryLogin[0], 'set-cookie') !== false) {
+    preg_match_all('%set-cookie: (.*?);%',$tryLogin[0],$d);$cookie = '';
+    for($o=0;$o<count($d[0]);$o++){$cookie.=$d[1][$o].";";}
+  }else{
+    preg_match_all('%Set-Cookie: (.*?);%',$tryLogin[0],$d);$cookie = '';
+    for($o=0;$o<count($d[0]);$o++){$cookie.=$d[1][$o].";";}
+  }
+
+  $pk = json_decode($tryLogin[1],true)['logged_in_user']['pk'];
+
+  $ch = curl_init();
+
+  curl_setopt($ch, CURLOPT_URL, "https://i.instagram.com/api/v1/live/create/");
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, '_csrftoken='.getCSRF().'&preview_height=1920&_uuid='.generateUUID().'&broadcast_type=RTMP_SWAP_ENABLED&preview_width=1080&internal_only=0');
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+  $headers = array();
+  $headers[] = 'X-Ig-Connection-Type: WIFI';
+  $headers[] = 'User-Agent: Instagram 35.0.0.20.96 Android (21/5.0; 480dpi; 1080x1920; asus; ASUS_Z00AD; Z00A_1; mofd_v1; in_ID; 95414347)';
+  $headers[] = 'Accept-Language: id-ID, en-US';
+  $headers[] = 'Cookie: '.$cookie;
+  $headers[] = 'Host: i.instagram.com';
+  $headers[] = 'X-Fb-Http-Engine: Liger';
+  $headers[] = 'Content-Type: application/x-www-form-urlencoded';
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+  $resultAwal = curl_exec($ch);
+  if (curl_errno($ch)) {
+      echo 'Error:' . curl_error($ch);
+  }
+  curl_close($ch);
+  echo "Stream id : ".json_decode($resultAwal,true)['broadcast_id']."
+";
+  echo "Main url : rtmps://live-upload.instagram.com:443/rtmp/
+";
+  echo "Last url : ".explode("/rtmp/",json_decode($resultAwal,true)['upload_url'])[1]."
+";
+
+  $ch = curl_init();
+
+  curl_setopt($ch, CURLOPT_URL, "https://i.instagram.com/api/v1/live/".json_decode($resultAwal,true)['broadcast_id']."/start/");
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, '_csrftoken='.getCSRF().'&_uuid='.generateUUID().'');
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+  $headers = array();
+  $headers[] = 'X-Ig-Connection-Type: WIFI';
+  $headers[] = 'User-Agent: Instagram 35.0.0.20.96 Android (21/5.0; 480dpi; 1080x1920; asus; ASUS_Z00AD; Z00A_1; mofd_v1; in_ID; 95414347)';
+  $headers[] = 'Accept-Language: id-ID, en-US';
+  $headers[] = 'Cookie: '.$cookie;
+  $headers[] = 'X-Fb-Http-Engine: Liger';
+  $headers[] = 'Content-Type: application/x-www-form-urlencoded';
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+  $result = curl_exec($ch);
+  if (curl_errno($ch)) {
+      echo 'Error:' . curl_error($ch);
+  }
+  curl_close($ch);
+
+  echo "Ingin mengakhiri ? (ketik 1)";
+  $akhiri = trim(fgets(STDIN));
+
+  if($akhiri == '1'){
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_URL, "https://i.instagram.com/api/v1/live/".json_decode($resultAwal,true)['broadcast_id']."/end_broadcast/");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, hookGenerate('{"_csrftoken":"'.getCSRF().'","_uid":"'.$pk.'","_uuid":"'.generateUUID().'","end_after_copyright_warning":"false"}'));
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+    $headers = array();
+    $headers[] = 'X-Ig-Connection-Type: WIFI';
+    $headers[] = 'User-Agent: Instagram 35.0.0.20.96 Android (21/5.0; 480dpi; 1080x1920; asus; ASUS_Z00AD; Z00A_1; mofd_v1; in_ID; 95414347)';
+    $headers[] = 'Accept-Language: id-ID, en-US';
+    $headers[] = 'Cookie: '.$cookie;
+    $headers[] = 'X-Fb-Http-Engine: Liger';
+    $headers[] = 'Content-Type: application/x-www-form-urlencoded';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+    $resultAkhir = curl_exec($ch);
+    if (curl_errno($ch)) {
+        echo 'Error:' . curl_error($ch);
+    }
+    curl_close($ch);
+
+    echo json_decode($resultAkhir,true)['status'];
+  }
+
+}
